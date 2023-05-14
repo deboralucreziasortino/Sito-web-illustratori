@@ -1,0 +1,682 @@
+body {
+    margin: 0 0;
+    background-color: #f5f5f5;
+    font-family:'Poppins', sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: #222;
+}
+
+header a:hover {
+    color:#f5f5f5;
+    text-decoration: underline;
+}
+
+header a.attivo {
+    font-weight: bold;
+}
+
+input {
+    border-radius: 10px;
+}
+
+header nav ul {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: rgb(254, 110, 124)
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section.hero {
+    background:url(immagini/AP_Xoana_Herrera_Take-Your-Recovery-Down-a-Notch_Middle_Color_01_2x.png) center;
+    max-width: 100%;
+    height: 600px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color:#f5f5f5;
+        margin: 60px;
+        padding: 60px 10px;
+        font-size: 40px;
+            background:rgba(0,0,0,0.70);
+            text-align: center;
+            border-radius: 40px;
+}
+
+.grid {
+    margin: 60px 60px 40px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+   /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));*/
+}
+
+main, .card {
+    max-width: 1400px;
+    padding: 0 0 20px 0;
+    margin: auto;
+}
+
+.card {
+    display: grid;
+    gap:20px;
+       margin-bottom: 120px;
+   }
+   
+   main div.card {
+    background:rgba(0,0,0,0.70);
+    border-radius: 40px;
+    margin: auto;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.30);
+}
+
+.card img {
+    border-radius: 40px 40px 0 0;
+    object-fit:cover;
+    height: 500px;
+    width: 400px;
+}
+
+main div img {
+    border-radius: 10px;
+}
+
+main div.card h2 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+footer {
+    padding: 60px 0;
+    margin: 0;
+    background-color: rgb(254, 110, 124);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p.seguici { /*pgina chi siamo*/
+    text-align: center;
+    padding: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 60px;
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+
+@media (max-width: 1000px) {
+    .grid {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+        gap:40px;
+    }
+    section.hero {
+        max-width: 100%;
+    }
+    .card img {
+        width: 100%;
+    }
+nav ul {
+    display:flex;
+    align-items: center;
+}
+
+h3 {
+padding: 0 20px 0 0;
+}
+
+}
+
+@media (max-width: 630px) {
+    .grid {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+   
+    header div {
+        flex-direction: column;
+        padding-bottom:20px;
+}
+}
+
+/*pagina chi siamo*/
+
+header nav.bar2 {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header div.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: rgb(254, 110, 124)
+}
+
+section.hero2 {
+    background:url(immagini/AP_La_Boca_NYT_THRILLER_2x.png) center;
+    max-width: 100%;
+    height: 600px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+.grid-2 {
+    margin:auto;
+    margin: 200px 60px 200px 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+main.chisiamo, .card-2 {
+    max-width: 1400px;
+    padding: 0 0 20px 0;
+    margin: auto;
+}
+
+.corpo {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 40px;
+    margin: auto;
+    margin: 200px 60px 200px 60px;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .corpo {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+    
+}
+@media (max-width: 600px) {
+    
+    header div.bar {
+        flex-direction: column;
+        padding-bottom:20px;
+}
+}
+
+/*pagina camilo huinca*/
+
+header div.camilo {
+    background-color: rgb(80, 143, 98);
+}
+
+section.hero3 {
+    background:url(immagini/AP_Camilo_Huinca_social-well_2x.png) center;
+    max-width: 100%;
+    height: 600px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+}
+
+img.grigia {
+    border-radius: 40px;
+}
+
+footer.camilo {
+    padding: 60px 100px;
+    margin: 0;
+    background-color: rgb(80, 143, 98);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+main.illustratori {
+    max-width: 1400px;
+    margin: auto;
+}
+
+  .grid3 img {
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.30);
+  }
+
+  .grid3 img{
+    border-radius: 40px;
+    object-fit:cover;
+    height: 500px;
+    width: 400px;
+}
+
+.grid3 {
+    margin: 60px 40px 60px 40px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "area1 area1 area2"
+    "area3 area4 area5"
+}
+
+
+img.grigia {
+    border-radius: 40px;
+}
+
+.grid-item1 {
+    font-size:19px;
+    grid-area: area1;
+    justify-self: center;
+    align-self: center;
+}
+
+.grid-item2 {
+    grid-area: area2;
+}
+
+.grid-item3 {
+    grid-area: area3;
+}
+
+.grid-item4 {
+    grid-area: area4;
+}
+
+.grid-item5 {
+    grid-area: area5;
+}
+
+@media (max-width: 1000px) {
+    .grid3 {
+        margin: 60px 40px 60px 40px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-gap: 40px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "area1 area1"
+        "area2 area3"
+        "area4 area5"
+    }
+   
+    .grid-item1 {
+        font-size: 17px;
+        grid-area: area1;
+        text-align: center;
+    }
+    .grid-item2 {
+        grid-area: area2;
+    }
+    
+    .grid-item3 {
+        grid-area: area3;
+    }
+    
+    .grid-item4 {
+        grid-area: area4;
+    }
+    
+    .grid-item5 {
+        grid-area: area5;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    header div {
+        flex-direction: column;
+        padding-bottom:20px;
+}
+    .grid3 {
+        margin: 60px 40px 60px 40px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "area1"
+        "area2" 
+        "area3"
+        "area4"
+        "area5"
+    }
+   
+    .grid-item1 {
+        font-size: 15px;
+        text-align: center;
+        grid-area: area1;
+    }
+    .grid-item2 {
+        grid-area: area2;
+    }
+    
+    .grid-item3 {
+        grid-area: area3;
+    }
+    
+    .grid-item4 {
+        grid-area: area4;
+    }
+    
+    .grid-item5 {
+        grid-area: area5;
+    }
+}
+
+div.sfera2,.sfera3,.sfera4,.sfera5,.sfera6 {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  div.sfera1{
+    width: 35px;
+    height: 35px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  section.sfere {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+
+.arrow {
+	width: 20px;
+	height: 20px;
+	border-top: 1vmin solid white;
+	border-right: 1vmin solid white;
+	transition: all 200ms ease;
+    margin-top: 20px;
+	
+	&.left {
+		left: 0;
+		transform: translate3d(0,-50%,0) rotate(-135deg);
+	}
+
+	&.right {
+		right: 0;
+		transform: translate3d(0,-50%,0) rotate(45deg);
+	}
+	
+	&:hover {
+		border-color:rgb(0, 0, 0);
+	}
+	
+	&:before {
+		transform: translate(-40%,-60%) rotate(45deg);
+	}
+}
+
+
+
+/*tim lahan*/
+section.hero4 {
+    background:url(immagini/AP_Tim_Lahan_ONEMEDICAL_1_2x.png) center;
+    max-width: 100%;
+    height: 600px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+}
+
+header div.tim {
+    background-color: rgb(144, 99, 142);
+}
+
+footer.tim {
+    padding: 60px 100px;
+    margin: 0;
+    background-color:rgb(144, 99, 142);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+div.sfera1t,.sfera3t,.sfera4t,.sfera5t,.sfera6t {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  div.sfera2t{
+    width: 35px;
+    height: 35px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+
+  
+  /*KARLOTTA FREIER*/
+  section.herok {
+    background:url(immagini/AP_Karlotta_Freier_Nytimes1_2x.jpg) center;
+    max-width: 100%;
+    height: 600px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+}
+
+header div.kar {
+    background-color: rgb(247, 92, 31);
+}
+
+footer.kar {
+    padding: 60px 100px;
+    margin: auto;
+    background-color:rgb(247, 92, 31);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+div.sfera1k,.sfera2k,.sfera4k,.sfera5k,.sfera6k {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  div.sfera3k{
+    width: 35px;
+    height: 35px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+
+  /* XOANA HERRERA */
+
+  section.herox {
+    background:url(immagini/AP_Xoana_Herrera_GCR_9_2x.jpg) center;
+    max-width: 100%;
+    height: 600px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+}
+
+header div.x {
+    background-color: rgb(210, 174, 28);
+}
+
+footer.x {
+    padding: 60px 100px;
+    margin: auto;
+    background-color: rgb(210, 174, 28);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+div.sfera1x,.sfera2x,.sfera3x,.sfera5x,.sfera6x {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  div.sfera4x {
+    width: 35px;
+    height: 35px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+
+  /*LINN FRITZ*/
+  
+  section.herol {
+    background:url(immagini/AP_Linn_Fritz_Wired_01_2x.png) center;
+    max-width: 100%;
+    height: 600px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+}
+
+header div.l {
+    background-color: rgb(226, 143, 137);
+}
+
+footer.l {
+    padding: 60px 100px;
+    margin: auto;
+    background-color: rgb(226, 143, 137);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+div.sfera1l,.sfera2l,.sfera3l,.sfera4l,.sfera6l {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  div.sfera5l {
+    width: 35px;
+    height: 35px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+
+
+/*LA BOCA*/
+section.herob {
+    background:url(immagini/AP_La_Boca_NYT_CRIME_2x.png) center;
+    max-width: 100%;
+    height: 600px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+}
+
+header div.b {
+    background-color: rgb(74, 180, 179);
+}
+
+footer.b {
+    padding: 60px 100px;
+    margin: auto;
+    background-color: rgb(74, 180, 179);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+div.sfera1b,.sfera2b,.sfera3b,.sfera4b,.sfera5b {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  div.sfera6b {
+    width: 35px;
+    height: 35px;
+    background: rgba(0,0,0,0.70);
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+  }
